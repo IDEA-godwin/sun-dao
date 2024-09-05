@@ -1,10 +1,10 @@
 import Marquee from 'react-fast-marquee'
 import Image from "next/image";
-import Image1 from '@/app/assets/Frame 82.svg'
-import Image2 from '@/app/assets/Frame 83.svg'
+import Image1 from '@/app/assets/Lisk.jpeg'
+import Image2 from '@/app/assets/Web3Brigde.jpeg'
 import Image3 from '@/app/assets/Frame 84.svg'
 import Image4 from '@/app/assets/Frame 85.svg'
-import Image5 from '@/app/assets/Frame 98.svg'
+import Image5 from '@/app/assets/Web3Lagos.jpeg'
 
 export default function PoweredBy() {
   return (
