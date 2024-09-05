@@ -13,7 +13,7 @@ export default async function page() {
       <section>
         <div className="text-center">
           <h1 className="text-5xl mb-3 font-medium">Solar Yield Farming</h1>
-          <p className="text-lg">Earning through Micro-grid Tokenization</p>
+          <p className="text-lg">Earning through Micro-grid Tokenization by joining our DAO</p>
         </div>
       </section>
       <Livecoinprice />
