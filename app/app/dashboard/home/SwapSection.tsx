@@ -33,9 +33,6 @@ export default function SwapSection() {
     }
   }
 
-  const handleMintNFT = async () => {
-  }
-
 
   return (
     <section>
