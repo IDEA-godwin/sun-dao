@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Asset-Backed ERC20 Token -- SunCoin
+
+## Overview
+
+This smart contract implements an ERC20 token using the ERC4626 standard. The token represents an investment in real-world assets, with its supply dynamically adjusted based on the value of the underlying asset pool.
+
+## Features
+
+- ERC20 compliant token
+- Implements ERC4626 tokenized vault standard
+- Minting mechanism based on asset-to-token ratio
+- Yield utilization for token buyback and burn
+
+## Contract Details
+
+### Token Minting
+
+The token minting process is tied to the ratio of total tokens in distribution against the accumulated assets in the contract pool. This ensures that the token supply accurately represents the underlying asset value.
+
+### Yield Utilization
+
+Yields generated from the real-world assets are used to reduce the total amount of tokens in circulation. This is achieved through a buyback and burn mechanism, which helps maintain the token's value proposition.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Foundry](https://book.getfoundry.sh/getting-started/installation.html)
+- Solidity ^0.8.0
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/asset-backed-token.git
+   cd asset-backed-token
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Install dependencies:
+   ```
+   forge install
+   ```
 
-## Learn More
+3. Compile the contract:
+   ```
+   forge build
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Contract Functions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[List and briefly explain the main functions of your contract, such as:]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `mint(uint256 amount)`: Mints new tokens based on the current asset-to-token ratio.
+- `deposit(uint356 amount)`: Mints new tokens based on the current asset-to-token ratio.
+- `burn(address owner, uint256 amount)`: Uses yield to buy back and destroy tokens.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+godsdelightjude@gmail.com
